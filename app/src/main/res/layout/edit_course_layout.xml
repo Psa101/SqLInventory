@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/edit_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <EditText
+            android:id="@+id/edit_course_name"
+            android:singleLine="true"
+            android:hint="@string/edit_name_hint"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_course_price"
+            android:singleLine="true"
+            android:hint="@string/edit_price_hint"
+            android:layout_marginBottom="@dimen/padding"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/edit_button_layout"
+            android:padding="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/edit_student_title"
+                android:singleLine="true"
+                android:text="Students in course: "
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_marginEnd="@dimen/padding"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/edit_students"
+                android:singleLine="true"
+                android:text="0"
+                android:layout_toRightOf="@id/edit_student_title"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_marginEnd="@dimen/padding"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/edit_increase_button"
+                android:src="@drawable/add"
+                android:layout_toLeftOf="@id/edit_decrease_button"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size" />
+
+            <ImageView
+                android:id="@+id/edit_decrease_button"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/remove"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_professor_layout"
+        android:padding="@dimen/padding"
+        android:layout_below="@id/edit_name_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_professor"
+            android:singleLine="true"
+            android:hint="Professor Name...."
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_phoneNum"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="Professor Phone Number...."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/edit_call_fab"
+        android:src="@drawable/phone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

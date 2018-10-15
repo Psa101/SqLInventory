@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/drop_button"
+        android:visibility="gone"
+        android:src="@drawable/drop"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_width="@dimen/drop_button"
+        android:layout_height="@dimen/drop_button" />
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_toRightOf="@id/drop_button"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            tools:text="@string/item_default_name" />
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            tools:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/item_size"
+            android:layout_below="@id/item_name"
+            tools:text="@string/item_default_size"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">University</string>
+    <string name="empty_title">Add A Course</string>
+    <string name="item_default_size">Students: 0</string>
+    <string name="item_default_name">Course Name</string>
+    <string name="menu_insert">Insert Course</string>
+    <string name="menu_deleteAll">Delete All</string>
+    <string name="default_price">$199.99</string>
+    <string name="drop_button">Drop Student</string>
+    <string name="edit_name_hint">Enter course name...</string>
+    <string name="edit_price_hint">$0.00</string>
+    <string name="edit_title">Product Detail</string>
+    <string name="main_title">Welcome</string>
+    <string name="delete_item_title">Delete</string>
+    <string name="save_item_title">save</string>
+</resources>
